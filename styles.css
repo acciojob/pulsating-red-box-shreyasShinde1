@@ -1,1 +1,25 @@
 /*  your css code here. If applicable */
+.box{
+	width: 100px;
+	height: 100px;
+	background:red;
+	
+}
+.scale{
+	animation: scale-box 1s infinite;
+}
+@keyframes scale-box{
+	0%{
+	transition: all 1s ease-in;
+	transform: scale(1.5);
+}50%{
+	transition: all 1s ease-out;
+	transform: scale(1);
+}100%{
+	transition: all 1s ease-in;
+	transform: scale(1.5);
+}
+/* .scale{
+	transition : all 1s ease-in;
+	transform: scale(1.5);
+} */
