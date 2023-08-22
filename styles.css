@@ -6,18 +6,18 @@
 	
 }
 .scale{
-	animation: scale-box 1s infinite;
+	animation: pulse 1s infinite;
 }
-@keyframes scale-box{
+@keyframes pulse{
 	0%{
-	transition: all 1s ease-in;
-	transform: scale(1.5);
-}50%{
-	transition: all 1s ease-out;
+	transition: all 1s ease-in-out;
 	transform: scale(1);
+}50%{
+	transition: all 1s ease-in-out;
+	transform: scale(0.8);
 }100%{
-	transition: all 1s ease-in;
-	transform: scale(1.5);
+	transition: all 1s ease-in-out;
+	transform: scale(1);
 }
 /* .scale{
 	transition : all 1s ease-in;
